@@ -8,6 +8,6 @@
 # https://gist.github.com/floehopper/99a0c8931f9d779b0998
 
 rtl_tcp & sleep 5
-./go/bin/rtlamr -msgtype=r900 -centerfreq=912000000 -filterid=1831543680 -format=json |
+./go/bin/rtlamr -msgtype=r900 -centerfreq=912000000 -filterid=$WaterMeterSerialNumber -format=json |
   jq --unbuffered -c '. |= del(.Message) + .Message' |
   ./go/bin/stdout_httpd -port 8080
