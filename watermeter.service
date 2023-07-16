@@ -1,0 +1,13 @@
+# Put this in ~/home/$USER/.config/systemd/user/
+# Afterwards, run: 
+# systemctl --user daemon-reload && systemctl --user enable watermeter && systemctl --user start watermeter
+
+[Unit]
+Description=Listens for broadcasted water meter reading. Reports to Home Assistant via MQTT.
+
+[Service]
+ExecStart=/home/$USER/watermeter.sh
+Restart=always
+
+[Install]
+WantedBy=default.target
