@@ -1,7 +1,7 @@
 # Monitor home water usage in Home Assistant using RTL-SDR 
 
 An work-in-progress solution for monitoring water usage in Home Assistant using an RTL-SDR and a Raspberry Pi. 
-This functionally captures the reading of my Neptune E-Coder R900i water meter in Saint Paul, MN and should work and should work for every home in this city. YMMV in other locations or with other meters.
+This functionally captures the reading of my [Neptune E-Coder R900i water meter](https://www.neptunetg.com/products/endpointsmius/e-coderr900i/) in Saint Paul, MN and should work and should work for every home in this city. YMMV in other locations or with other meters.
 
 Using a [Nooelec RTL-SDR v5](https://www.amazon.com/gp/product/B01GDN1T4S?psc=1) and a [Raspberry Pi](https://rpilocator.com/), one can wirelessly capture the same unencrypted water meter readings that the city uses for billing. 
 
