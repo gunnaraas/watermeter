@@ -3,7 +3,7 @@
 # systemctl --user daemon-reload && systemctl --user enable watermeter && systemctl --user start watermeter
 
 [Unit]
-Description=Listens for broadcasted water meter reading. Reports to Home Assistant via MQTT.
+Description=Listens for broadcasted water meter reading. Reports to Home Assistant via REST.
 
 [Service]
 ExecStart=/home/$USER/watermeter.sh
