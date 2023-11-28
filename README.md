@@ -9,6 +9,8 @@ Using a [Nooelec RTL-SDR v5](https://www.amazon.com/gp/product/B01GDN1T4S?psc=1)
 - I have this running on [Debian](https://raspi.debian.net/) on a Raspberry Pi 4B. The compute demands of this are minimal and this could certainly run on less powerful hardware.
 - Build rtl-sdr from source. I found this to be a bit tricky, [these instructions](https://gist.github.com/floehopper/99a0c8931f9d779b0998) helped. 
 - Install Go. I had issues with the `apt` package and found that [downloading and installing the binary directly](https://www.jeremymorgan.com/tutorials/raspberry-pi/install-go-raspberry-pi/) worked best.
+- Install `jq` to transform rtl output into JSON understandable by Home Assistant:
+  - `sudo apt install -y jq` 
 - Install `stdout_httpd` and `rtlamr`
   - `go install github.com/abaker/stdout_httpd@latest`
   - `go install github.com/bemasher/rtlamr@latest`
